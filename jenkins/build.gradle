@@ -37,12 +37,12 @@ tasks.named('test') {
 bootJar {
     archiveBaseName  = 'spring-boot-app'
     version =  '0.1.0'
-    destinationDirectory = file("$buildDir/libs") // 기본 빌드 디렉터리 설정
+    //destinationDirectory = file("$buildDir/libs") // 기본 빌드 디렉터리 설정
 }
 
 // Jenkins 작업 공간에 빌드 결과 복사
-task copyToJenkins(type: Copy) {
-    dependsOn bootJar // bootJar 태스크가 실행된 후에 실행
-    from "$buildDir/libs" // 빌드 결과물 디렉터리
-    into "/var/jenkins_home/workspace/jenkins/output" // Jenkins 작업 공간의 출력 디렉터리
-}
+//task copyToJenkins(type: Copy) {
+//    dependsOn bootJar // bootJar 태스크가 실행된 후에 실행
+//    from "$buildDir/libs" // 빌드 결과물 디렉터리
+//    into "/var/jenkins_home/workspace/jenkins/output" // Jenkins 작업 공간의 출력 디렉터리
+//}
