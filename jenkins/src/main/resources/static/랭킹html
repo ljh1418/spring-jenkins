@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes UI</title>
+    <link rel="stylesheet" href="heroes.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HEROES</h1>
+            <div class="options">
+                <label><input type="radio" name="sort" checked> LEVEL</label>
+                <label><input type="radio" name="sort"> NAME</label>
+            </div>
+        </div>
+        <div class="table">
+            <div class="column">
+                <h2>전사</h2>
+                <ul>
+                    <li>캐릭터 1</li>
+                    <li>캐릭터 2</li>
+                    <li>캐릭터 3</li>
+                    <li>캐릭터 4</li>
+                    <li>캐릭터 5</li>
+                    <li>캐릭터 6</li>
+                    <li>캐릭터 7</li>
+                    <li>캐릭터 8</li>
+                    <li>캐릭터 9</li>
+                    <li>캐릭터 10</li>
+                    <li>캐릭터 11</li>
+                    <li>캐릭터 12</li>
+                    <li>캐릭터 13</li>
+                    <li>캐릭터 14</li>
+                    <li>캐릭터 15</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>도적</h2>
+                <ul>
+                    <li>캐릭터 1</li>
+                    <li>캐릭터 2</li>
+                    <li>캐릭터 3</li>
+                    <li>캐릭터 4</li>
+                    <li>캐릭터 5</li>
+                    <li>캐릭터 6</li>
+                    <li>캐릭터 7</li>
+                    <li>캐릭터 8</li>
+                    <li>캐릭터 9</li>
+                    <li>캐릭터 10</li>
+                    <li>캐릭터 11</li>
+                    <li>캐릭터 12</li>
+                    <li>캐릭터 13</li>
+                    <li>캐릭터 14</li>
+                    <li>캐릭터 15</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>주술사</h2>
+                <ul>
+                    <li>캐릭터 1</li>
+                    <li>캐릭터 2</li>
+                    <li>캐릭터 3</li>
+                    <li>캐릭터 4</li>
+                    <li>캐릭터 5</li>
+                    <li>캐릭터 6</li>
+                    <li>캐릭터 7</li>
+                    <li>캐릭터 8</li>
+                    <li>캐릭터 9</li>
+                    <li>캐릭터 10</li>
+                    <li>캐릭터 11</li>
+                    <li>캐릭터 12</li>
+                    <li>캐릭터 13</li>
+                    <li>캐릭터 14</li>
+                    <li>캐릭터 15</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>도사</h2>
+                <ul>
+                    <li>캐릭터 1</li>
+                    <li>캐릭터 2</li>
+                    <li>캐릭터 3</li>
+                    <li>캐릭터 4</li>
+                    <li>캐릭터 5</li>
+                    <li>캐릭터 6</li>
+                    <li>캐릭터 7</li>
+                    <li>캐릭터 8</li>
+                    <li>캐릭터 9</li>
+                    <li>캐릭터 10</li>
+                    <li>캐릭터 11</li>
+                    <li>캐릭터 12</li>
+                    <li>캐릭터 13</li>
+                    <li>캐릭터 14</li>
+                    <li>캐릭터 15</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <button>QUIT</button>
+        </div>
+    </div>
+</body>
+</html>

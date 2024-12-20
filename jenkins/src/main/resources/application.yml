@@ -1,6 +1,32 @@
 spring:
   application:
-    name: jenkins
+    name: jenkins  # 애플리케이션 이름 설정
+
+  datasource:
+    url: jdbc:mysql://211.188.52.104:3306/nemunasi?serverTimezone=UTC  # MySQL 데이터베이스 연결 URL
+    username: root  # MySQL 사용자명
+    password: rootpassword  # MySQL 비밀번호
+    driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL 드라이버 클래스명
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 테이블 자동 생성 및 업데이트
+    show-sql: true  # SQL 쿼리 로그 출력
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect  # MySQL 8.x에 적합한 Hibernate Dialect 설정
+
+  logging:
+    level:
+      org.hibernate.SQL: DEBUG  # Hibernate SQL 쿼리 출력
+      org.hibernate.type.descriptor.sql: TRACE  # Hibernate SQL 매개변수 바인딩 정보 출력
+      org.hibernate: DEBUG  # Hibernate 전반적인 동작 로그
+      org.springframework.orm.jpa: DEBUG  # Spring JPA 동작 로그
+      com.zaxxer.hikari: DEBUG  # HikariCP (커넥션 풀) 로그
+
+  sql:
+    init:
+      platform: mysql  # MySQL 플랫폼 사용
 
 server:
-  port: 8000
+  port: 9999  # 서버 포트 설정
